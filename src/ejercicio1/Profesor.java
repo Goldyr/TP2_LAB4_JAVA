@@ -12,6 +12,13 @@ public class Profesor extends Empleado {
 		setAntiguedadDocente(-1);
 	}
 	
+	Profesor(String cargo, int antiguedad){
+		//Constructor default que usa el constructor de empleado 
+		super();
+		setCargo(cargo);
+		setAntiguedadDocente(antiguedad);
+	}
+	
 	@Override
 	public String toString() {
 		return "El profesor con el ID "+ super.getId() +" tiene "+ super.getEdad() + " años de edad ," + getAntiguedadDocente() + " anios trabajando como docente y su cargo es de " + getCargo();
