@@ -1,18 +1,18 @@
 package ejercicio3;
 
-public class Edificio_de_oficinas implements IEdificio {
+public class Edificio_de_oficinas extends Edificio {
 
 	private int cant_oficinas;
-	private double SuperficieEdificio;
 	
 	Edificio_de_oficinas(){
-		
+		super();
+		this.cant_oficinas = 0;
 	}
 
 	Edificio_de_oficinas(double SuperficieEdificio, int cant_oficinas){
 		
+		super(SuperficieEdificio);
 		this.cant_oficinas = cant_oficinas;
-		this.SuperficieEdificio= SuperficieEdificio;
 	}
 	
 	public int getCant_oficinas() {
@@ -28,16 +28,6 @@ public class Edificio_de_oficinas implements IEdificio {
 		return "Superficie del edificio: " + getSuperficieEdificio() +". Cantidad de oficinas: " + this.cant_oficinas ;
 	}
 
-	@Override
-	public double getSuperficieEdificio() {
-		return this.SuperficieEdificio;
-	}
-
-	@Override
-	public void setSuperficieEdificio(double SuperficieEdificio) {
-		this.SuperficieEdificio= SuperficieEdificio;
-		
-	}
 	
 	
 }
