@@ -33,8 +33,8 @@ public class ProductoFresco extends Producto {
 	}
 	@Override
 	public String toString() {
-		return "El Producto Fresco: " + getNombre() + "Tiene fecha de caducidad" + getFecha_Caducidad() +
-		"Su lote es" + getNumero_lote() + "la fecha de envasado es " + fecha_envasado + "y su país de origen " + país_origen;
+		return "El Producto Fresco: " + getNombre() + ". Tiene fecha de caducidad: " + getFecha_Caducidad() +
+		". Su lote es " + getNumero_lote() + " y la fecha de envasado es " + fecha_envasado + "y su país de origen " + país_origen;
 	}
 	
 }

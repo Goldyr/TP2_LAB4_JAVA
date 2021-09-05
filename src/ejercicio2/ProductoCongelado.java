@@ -27,8 +27,8 @@ public class ProductoCongelado extends Producto {
 	
 	@Override
 	public String toString() {
-		return "El Producto Congelado: " + getNombre() + "Tiene fecha de caducidad" + getFecha_Caducidad() + "Su lote es" 
-				+ getNumero_lote()+ "y debe tener una temperatura de" + getTemperatura();
+		return "El Producto Congelado: " + getNombre() + "Tiene fecha de caducidad: " + getFecha_Caducidad() + ". Su lote es " 
+				+ getNumero_lote()+ " y debe tener una temperatura de" + getTemperatura();
 	}
 	
 }
